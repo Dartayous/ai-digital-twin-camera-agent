@@ -1,0 +1,642 @@
+#usda 1.0
+(
+    customLayerData = {
+        dictionary cameraSettings = {
+            dictionary Front = {
+                double3 position = (0, 0, 500)
+                double radius = 500
+            }
+            dictionary Perspective = {
+                double3 position = (25.678919356846226, 6.453308537581475, 26.608262528572048)
+                double3 target = (2.0815929447748474, -0.42349539983581863, 0.48604521258820554)
+            }
+            dictionary Right = {
+                double3 position = (-500, 0, 0)
+                double radius = 500
+            }
+            dictionary Top = {
+                double3 position = (0, 500, 0)
+                double radius = 500
+            }
+            string boundCamera = "/OmniverseKit_Persp"
+        }
+        dictionary omni_layer = {
+            string authoring_layer = "./runtime_v03.usda"
+        }
+        dictionary renderSettings = {
+            float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
+            float3 "rtx:fog:fogColor" = (0.75, 0.75, 0.75)
+            float3 "rtx:index:backgroundColor" = (0, 0, 0)
+            float3 "rtx:index:regionOfInterestMax" = (0, 0, 0)
+            float3 "rtx:index:regionOfInterestMin" = (0, 0, 0)
+            float3 "rtx:post:backgroundZeroAlpha:backgroundDefaultColor" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gain" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorcorr:offset" = (0, 0, 0)
+            float3 "rtx:post:colorcorr:saturation" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:blackpoint" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:contrast" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gain" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:gamma" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:lift" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:multiply" = (1, 1, 1)
+            float3 "rtx:post:colorgrad:offset" = (0, 0, 0)
+            float3 "rtx:post:colorgrad:whitepoint" = (1, 1, 1)
+            float3 "rtx:post:lensDistortion:lensFocalLengthArray" = (10, 30, 50)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffX" = (450, 475, 500)
+            float3 "rtx:post:lensFlares:anisoFlareFalloffY" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:cutoffPoint" = (2, 2, 2)
+            float3 "rtx:post:lensFlares:haloFlareFalloff" = (10, 10, 10)
+            float3 "rtx:post:lensFlares:haloFlareRadius" = (75, 75, 75)
+            float3 "rtx:post:lensFlares:isotropicFlareFalloff" = (50, 50, 50)
+            float3 "rtx:post:lensFlares:spectralBlurWavelengthRange" = (380, 550, 770)
+            float3 "rtx:post:tonemap:whitepoint" = (1, 1, 1)
+            float3 "rtx:raytracing:indexdirect:svoBrickSize" = (32, 32, 32)
+            float3 "rtx:raytracing:inscattering:singleScatteringAlbedo" = (0.9, 0.9, 0.9)
+            float3 "rtx:raytracing:inscattering:transmittanceColor" = (0.5, 0.5, 0.5)
+            float3 "rtx:sceneDb:ambientLightColor" = (0.1, 0.1, 0.1)
+            float2 "rtx:viewTile:resolution" = (0, 0)
+        }
+    }
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "World"
+{
+    def Xform "EnvWrapper" (
+        prepend references = @./environment_v02.usda@
+    )
+    {
+        over "Environment"
+        {
+            over "Warning_Light"
+            {
+                custom string semantic:class = "warning_light"
+
+                over "Xform"
+                {
+                    over "Warning_Light"
+                    {
+                        over "Glass_Dome"
+                        {
+                            over "Sphere" (
+                                prepend apiSchemas = ["SemanticsAPI:Semantics"]
+                            )
+                            {
+                                custom string semantic:class = "warning_light"
+                                string semantic:Semantics:params:semanticData = "warning_light"
+                                string semantic:Semantics:params:semanticType = "class"
+                            }
+                        }
+
+                        over "Base"
+                        {
+                            over "Cylinder" (
+                                prepend apiSchemas = ["SemanticsAPI:Semantics"]
+                            )
+                            {
+                                custom string semantic:class = "warning_light"
+                                string semantic:Semantics:params:semanticData = "warning_light"
+                                string semantic:Semantics:params:semanticType = "class"
+                            }
+                        }
+                    }
+                }
+            }
+
+            over "Box"
+            {
+                over "Brown_Box"
+                {
+                    over "Xform_30"
+                    {
+                    }
+
+                    over "Xform_31"
+                    {
+                    }
+
+                    over "Xform_32"
+                    {
+                    }
+
+                    over "Xform_33"
+                    {
+                    }
+
+                    over "Xform_34"
+                    {
+                    }
+
+                    over "Xform_35"
+                    {
+                    }
+
+                    over "Xform_36"
+                    {
+                    }
+
+                    over "Xform_37"
+                    {
+                    }
+
+                    over "Xform_38"
+                    {
+                    }
+
+                    over "Xform_39"
+                    {
+                    }
+
+                    over "Xform_40"
+                    {
+                    }
+
+                    over "Xform_41"
+                    {
+                    }
+
+                    over "Xform_42"
+                    {
+                    }
+
+                    over "Xform_43"
+                    {
+                    }
+
+                    over "Xform_44"
+                    {
+                    }
+
+                    over "Xform_45"
+                    {
+                    }
+
+                    over "Xform_46"
+                    {
+                    }
+
+                    over "Xform_47"
+                    {
+                    }
+                }
+
+                over "Dark_Box"
+                {
+                    over "Xform_32"
+                    {
+                    }
+
+                    over "Xform_33"
+                    {
+                    }
+
+                    over "Xform_34"
+                    {
+                    }
+
+                    over "Xform_35"
+                    {
+                    }
+
+                    over "Xform_36"
+                    {
+                    }
+
+                    over "Xform_37"
+                    {
+                    }
+
+                    over "Xform_38"
+                    {
+                    }
+
+                    over "Xform_39"
+                    {
+                    }
+
+                    over "Xform_40"
+                    {
+                    }
+
+                    over "Xform_41"
+                    {
+                    }
+
+                    over "Xform_42"
+                    {
+                    }
+
+                    over "Xform_43"
+                    {
+                    }
+
+                    over "Xform_44"
+                    {
+                    }
+                }
+
+                over "Light_Box"
+                {
+                    over "Xform_20"
+                    {
+                    }
+
+                    over "Xform_21"
+                    {
+                    }
+
+                    over "Xform_22"
+                    {
+                    }
+
+                    over "Xform_23"
+                    {
+                    }
+
+                    over "Xform_24"
+                    {
+                    }
+
+                    over "Xform_25"
+                    {
+                    }
+
+                    over "Xform_26"
+                    {
+                    }
+
+                    over "Xform_27"
+                    {
+                    }
+
+                    over "Xform_28"
+                    {
+                    }
+
+                    over "Xform_29"
+                    {
+                    }
+
+                    over "Xform_30"
+                    {
+                    }
+
+                    over "Xform_31"
+                    {
+                    }
+
+                    over "Xform_32"
+                    {
+                    }
+
+                    over "Xform_33"
+                    {
+                    }
+
+                    over "Xform_34"
+                    {
+                    }
+
+                    over "Xform_35"
+                    {
+                    }
+
+                    over "Xform_36"
+                    {
+                    }
+
+                    over "Xform_37"
+                    {
+                    }
+
+                    over "Xform_38"
+                    {
+                    }
+                }
+            }
+        }
+    }
+
+    def Xform "AgentRoot"
+    {
+        float xformOp:rotateY = -4
+        double3 xformOp:translate = (24.28, 2.2, 9.29)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateY"]
+
+        def Camera "AgentCamera" (
+            prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+        )
+        {
+            float exposure:fStop = 5
+            float exposure:responsivity = 1.1026709
+            float exposure:time = 0.02
+            double focalLength = 24
+            float horizontalAperture = 20.955
+            custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -1.0736261037061123)
+            float verticalAperture = 15.2908
+            double3 xformOp:rotateXYZ = (-10.100000150501728, 240.20000357925892, 3.1000000461935997)
+            float3 xformOp:rotateYXZ = (-17.4, 411.30002, 23)
+            float3 xformOp:scale = (1, 1, 1)
+            double3 xformOp:translate = (-46.10123206294844, 2.1999333438409696, -28.59784717123025)
+            uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+        }
+    }
+
+    def Scope "Runtime"
+    {
+        def Xform "Sensors"
+        {
+        }
+
+        def Xform "Perception"
+        {
+        }
+
+        def Xform "Decision"
+        {
+        }
+
+        def Xform "Control"
+        {
+        }
+    }
+}
+
+def "Render" (
+    hide_in_stage_window = true
+    no_delete = true
+)
+{
+    def "OmniverseKit"
+    {
+        def "HydraTextures" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            def RenderProduct "omni_kit_widget_viewport_ViewportTexture_0" (
+                prepend apiSchemas = ["OmniRtxSettingsCommonAdvancedAPI_1", "OmniRtxSettingsRtAdvancedAPI_1", "OmniRtxSettingsPtAdvancedAPI_1", "OmniRtxPostColorGradingAPI_1", "OmniRtxPostChromaticAberrationAPI_1", "OmniRtxPostBloomPhysicalAPI_1", "OmniRtxPostMatteObjectAPI_1", "OmniRtxPostCompositingAPI_1", "OmniRtxPostDofAPI_1", "OmniRtxPostMotionBlurAPI_1", "OmniRtxPostTvNoiseAPI_1", "OmniRtxPostTonemapIrayReinhardAPI_1", "OmniRtxPostDebugSettingsAPI_1", "OmniRtxDebugSettingsAPI_1"]
+                hide_in_stage_window = true
+                no_delete = true
+            )
+            {
+                rel camera = </World/AgentRoot/AgentCamera>
+                token omni:rtx:ambientOcclusion:denoiserMode = "none"
+                token omni:rtx:background:source:texture:textureMode = "repeatMirrored"
+                token omni:rtx:background:source:type = "domeLight"
+                bool omni:rtx:debug:view:pixelDebug:enableFixedTextPos = 1
+                token omni:rtx:directLighting:sampledLighting:denoisingTechnique = "None"
+                bool omni:rtx:dlss:frameGeneration = 1
+                bool omni:rtx:indirectDiffuse:denoiser:enabled = 0
+                bool omni:rtx:material:db:syncLoads = 1
+                bool omni:rtx:post:registeredCompositing:invertColorCorrection = 1
+                bool omni:rtx:post:registeredCompositing:invertToneMap = 1
+                bool omni:rtx:pt:adaptiveSampling:filterError = 0
+                uint omni:rtx:pt:adaptiveSampling:fixedSppIterations = 2
+                uint omni:rtx:pt:maxSamplesPerLaunch = 2073600
+                uint omni:rtx:pt:mgpu:maxPixelsPerRegionExponent = 12
+                bool omni:rtx:reflections:denoiser:enabled = 0
+                token omni:rtx:rendermode = "RealTimePathTracing"
+                color3f omni:rtx:rt:ambientLight:color = (0.1, 0.1, 0.1)
+                bool omni:rtx:rt:demoire = 0
+                bool omni:rtx:rt:lightcache:spatialCache:dontResolveConflicts = 1
+                int omni:rtx:rt:sss:samples = 1
+                uint omni:rtx:rtpt:maxVolumeBounces = 15
+                float omni:rtx:rtpt:modulatingRoughnessThreshold = 0.08
+                bool omni:rtx:scene:hydra:materialSyncLoads = 1
+                rel orderedVars = </Render/Vars/LdrColor>
+                custom bool overrideClipRange = 0
+                uniform int2 resolution = (1895, 969)
+            }
+
+            over "Replicator"
+            {
+                over "PostRender"
+                {
+                    over "SDGPipeline"
+                    {
+                        custom uint64 graph:variable:__computeParams (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__computeParams"
+                        )
+                        custom uint64 graph:variable:__cudaInteropState (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__cudaInteropState"
+                        )
+                        custom uint64 graph:variable:__cudaStream (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__cudaStream"
+                        )
+                        custom uint64 graph:variable:__rpInteropState (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__rpInteropState"
+                        )
+                    }
+                }
+            }
+
+            over "Replicator_01"
+            {
+                over "PostRender"
+                {
+                    over "SDGPipeline"
+                    {
+                        custom uint64 graph:variable:__computeParams (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__computeParams"
+                        )
+                        custom uint64 graph:variable:__cudaInteropState (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__cudaInteropState"
+                        )
+                        custom uint64 graph:variable:__cudaStream (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__cudaStream"
+                        )
+                        custom uint64 graph:variable:__rpInteropState (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__rpInteropState"
+                        )
+                    }
+                }
+            }
+
+            over "Replicator_02"
+            {
+                over "PostRender"
+                {
+                    over "SDGPipeline"
+                    {
+                        custom uint64 graph:variable:__computeParams (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__computeParams"
+                        )
+                        custom uint64 graph:variable:__cudaInteropState (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__cudaInteropState"
+                        )
+                        custom uint64 graph:variable:__cudaStream (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__cudaStream"
+                        )
+                        custom uint64 graph:variable:__rpInteropState (
+                            customData = {
+                                token scope = "private"
+                            }
+                            displayName = "__rpInteropState"
+                        )
+                    }
+                }
+            }
+        }
+    }
+
+    def RenderSettings "OmniverseGlobalRenderSettings" (
+        prepend apiSchemas = ["OmniRtxSettingsGlobalRtAdvancedAPI_1", "OmniRtxSettingsGlobalPtAdvancedAPI_1"]
+        no_delete = true
+    )
+    {
+        rel products = </Render/OmniverseKit/HydraTextures/omni_kit_widget_viewport_ViewportTexture_0>
+    }
+
+    def "Vars"
+    {
+        def RenderVar "LdrColor" (
+            hide_in_stage_window = true
+            no_delete = true
+        )
+        {
+            uniform string sourceName = "LdrColor"
+        }
+    }
+}
+
+over "OmniverseKit_Persp" (
+    prepend apiSchemas = ["OmniRtxCameraAutoExposureAPI_1", "OmniRtxCameraExposureAPI_1"]
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float exposure:fStop = 5
+    float exposure:responsivity = 1.1026709
+    float exposure:time = 0.02
+    float focalLength = 18.147562
+    float focusDistance = 400
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -35.86773597113436)
+    float3 xformOp:rotateXYZ = (-30.59127, 163.40839, 1.1368684e-13)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (14.63714763097157, 30.304458567204495, -49.12562302176913)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Front" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 5000
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 5000
+    float3 xformOp:rotateXYZ = (-0, 0, -0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 0, 500)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Right" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 5000
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 5000
+    float3 xformOp:rotateXYZ = (0, -90, -0)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (-500, 0, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+
+over "OmniverseKit_Top" (
+    customData = {
+        dictionary omni = {
+            dictionary kit = {
+                bool hide_in_stage_window = 1
+                bool no_delete = 1
+            }
+        }
+    }
+    hide_in_stage_window = true
+    kind = "component"
+    no_delete = true
+)
+{
+    float2 clippingRange = (1, 10000000)
+    float horizontalAperture = 5000
+    custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -500)
+    token projection = "orthographic"
+    float verticalAperture = 5000
+    float3 xformOp:rotateXYZ = (90, -4.961563e-15, 180)
+    float3 xformOp:scale = (1, 1, 1)
+    double3 xformOp:translate = (0, 500, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:rotateXYZ", "xformOp:scale"]
+}
+

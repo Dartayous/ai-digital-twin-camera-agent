@@ -1,0 +1,49 @@
+#usda 1.0
+(
+    defaultPrim = "World"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "World"
+{
+    def Xform "EnvWrapper" (
+        prepend references = @./environment_v02.usda@
+    )
+    {
+    }
+
+    def Xform "AgentRoot"
+    {
+        double3 xformOp:translate = (0, 8, 20)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+
+        def Camera "AgentCamera"
+        {
+            double focalLength = 24
+            float horizontalAperture = 20.955
+            float verticalAperture = 15.2908
+            double3 xformOp:translate = (0, 0, 0)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Scope "Runtime"
+    {
+        def Xform "Sensors"
+        {
+        }
+
+        def Xform "Perception"
+        {
+        }
+
+        def Xform "Decision"
+        {
+        }
+
+        def Xform "Control"
+        {
+        }
+    }
+}

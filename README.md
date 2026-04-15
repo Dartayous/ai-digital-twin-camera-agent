@@ -26,6 +26,10 @@ This is a **full perception → decision → action loop**, representing a found
   <img src="media/camera_agent_target_lock.gif" width="900"/>
 </p>
 
+<p align="center">
+  <em>Camera agent scanning, reacquiring, and locking onto a red warning light using vision-driven control.</em>
+</p>
+
 This result demonstrates a full **perception → decision → action loop** operating inside a digital twin, where the agent detects the warning light, navigates toward it, reacquires it when needed, and completes final visual alignment.
 
 ---
