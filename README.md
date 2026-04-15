@@ -89,43 +89,32 @@ Target: Red warning light
 
 ## 📸 Highlights
 
-These renders showcase the Digital Twin environment from multiple functional perspectives, highlighting system layout, asset organization, and the operational context in which the Camera Agent performs perception and target tracking.
-
----
+These selected renders show the digital twin warehouse environment from multiple functional angles, emphasizing spatial layout, system context, asset organization, and the operating space in which the Camera Agent performs perception, navigation, and target lock-on.
 
 ### 1. Full System Overview
-A top-down perspective of the entire warehouse digital twin, showing conveyor routing, workstation zones, storage areas, and the central server enclosure where the target is located.
+A wide establishing view of the warehouse digital twin, showing the main operational zones, conveyor routing, work areas, and the central region where the target-search behavior takes place.
 
-![Full Overview](./images/digital_twin_warehouse_01.png)
-
----
+![Full Overview](images/digital_twin_warehouse_01.png)
 
 ### 2. Storage & Inventory Zone
-A focused view of the storage racks and boxed inventory, demonstrating structured asset placement and repeatable geometry for perception testing.
+A closer view of the storage area, highlighting repeatable shelving geometry, boxed assets, and the kind of structured scene content used for perception and navigation testing.
 
-![Storage Zone](./images/digital_twin_warehouse_02.png)
-
----
+![Storage Zone](images/digital_twin_warehouse_02.png)
 
 ### 3. Workstation Integration
-A closer look at operator workstations within the environment, illustrating how human-centric elements are integrated into the digital twin.
+A functional workstation view showing how human-centered assets are incorporated into the broader digital twin without breaking the system-level layout.
 
-![Workstations](./images/digital_twin_warehouse_03.png)
-
----
+![Workstations](images/digital_twin_warehouse_03.png)
 
 ### 4. Conveyor System Detail
-A detailed shot of the conveyor junction and transfer mechanism, highlighting mechanical layout and occlusion complexity.
+A detailed look at the conveyor section, emphasizing mechanical layout, transfer complexity, and the kinds of occlusion and visibility challenges present in the scene.
 
-![Conveyor Detail](./images/digital_twin_warehouse_04.png)
-
----
+![Conveyor Detail](images/digital_twin_warehouse_04.png)
 
 ### 5. Target Zone (Server Core)
-An overhead view of the central server enclosure where the warning light target resides, emphasizing dense geometry and detection difficulty.
+An overhead view of the server enclosure area where the red warning-light target is located, highlighting the dense geometry and constrained visual conditions that make lock-on more challenging.
 
-![Target Zone](./images/digital_twin_warehouse_05.png)
-
+![Target Zone](images/digital_twin_warehouse_05.png)
 --- 
 
 
