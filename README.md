@@ -23,7 +23,7 @@ This is a **full perception → decision → action loop**, representing a found
 > The Camera Agent successfully detects, navigates to, and visually locks onto a real target in a complex 3D environment — without requiring a predefined starting distance.
 
 <p align="center">
-  <img src="media/camera_agent_target_lock.gif" width="900"/>
+  <img src="media/warehouse_digital_twin.gif" width="900"/>
 </p>
 
 <p align="center">
