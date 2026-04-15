@@ -91,30 +91,40 @@ Target: Red warning light
 
 These renders showcase the Digital Twin environment from multiple functional perspectives, highlighting system layout, asset organization, and the operational context in which the Camera Agent performs perception and target tracking.
 
-### 1. Full System Overview
-A top-down perspective of the entire warehouse digital twin, showing conveyor routing, workstation zones, storage areas, and the central server enclosure where the target is located. This establishes the global spatial context the agent must navigate.
+---
 
-![Hero System Overview](images/digital_twin_warehouse_01.png)
+### 1. Full System Overview
+A top-down perspective of the entire warehouse digital twin, showing conveyor routing, workstation zones, storage areas, and the central server enclosure where the target is located.
+
+![Full Overview](./images/digital_twin_warehouse_01.png)
+
+---
 
 ### 2. Storage & Inventory Zone
-A focused view of the storage racks and boxed inventory, demonstrating structured asset placement and repeatable geometry—key for testing perception consistency and spatial reasoning in cluttered environments.
+A focused view of the storage racks and boxed inventory, demonstrating structured asset placement and repeatable geometry for perception testing.
 
-![Inventory Zone](images/digital_twin_warehouse_02.png)
+![Storage Zone](./images/digital_twin_warehouse_02.png)
+
+---
 
 ### 3. Workstation Integration
-A closer look at operator workstations within the environment, illustrating how human-centric elements are integrated into the digital twin alongside automated systems, reinforcing real-world applicability.
+A closer look at operator workstations within the environment, illustrating how human-centric elements are integrated into the digital twin.
 
-![Workstation Detail](images/digital_twin_warehouse_03.png)
+![Workstations](./images/digital_twin_warehouse_03.png)
+
+---
 
 ### 4. Conveyor System Detail
-A detailed shot of the conveyor junction and transfer mechanism, highlighting mechanical layout and flow design—important for understanding environmental complexity and potential occlusion scenarios.
+A detailed shot of the conveyor junction and transfer mechanism, highlighting mechanical layout and occlusion complexity.
 
-![Conveyor Detail](images/digital_twin_warehouse_04.png)
+![Conveyor Detail](./images/digital_twin_warehouse_04.png)
+
+---
 
 ### 5. Target Zone (Server Core)
-An overhead view of the central server enclosure where the warning light target resides, emphasizing structural occlusion, lighting contrast, and the challenge of reliable visual detection within dense geometry.
+An overhead view of the central server enclosure where the warning light target resides, emphasizing dense geometry and detection difficulty.
 
-![Server Core](images/digital_twin_warehouse_05.png)
+![Target Zone](./images/digital_twin_warehouse_05.png)
 
 --- 
 
