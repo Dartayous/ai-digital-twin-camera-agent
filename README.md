@@ -25,7 +25,9 @@ This is a **full perception → decision → action loop**, representing a found
 > The Camera Agent successfully detects, navigates to, and visually locks onto a real target in a complex 3D environment — without requiring a predefined starting distance.
 
 📹 **Proof (Core Result):**  
-`media/Camera_Agent_Track_To_RED_Light_Target.mp4`
+[![Camera Agent Result](images/digital_twin_warehouse_05.png)](media/Camera_Agent_Track_To_RED_Light_Target.mp4)
+
+[Watch the full result video](media/Camera_Agent_Track_To_RED_Light_Target.mp4)
 
 ---
 
