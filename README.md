@@ -2,7 +2,7 @@
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project demonstrates an **AI-driven camera agent operating inside a Digital Twin environment** performing real-time scanning, target acquisition, and lock-on using bounding box detection and spatial reasoning built in NVIDIA Omniverse + Isaac Sim.
 
@@ -18,7 +18,7 @@ This is a **full perception → decision → action loop**, representing a found
 
 ---
 
-## 🎯 Key Achievement
+## Key Achievement
 
 > The Camera Agent successfully detects, navigates to, and visually locks onto a real target in a complex 3D environment — without requiring a predefined starting distance.
 
@@ -34,7 +34,7 @@ This result demonstrates a full **perception → decision → action loop** oper
 
 ---
 
-## 🧠 System Architecture
+## System Architecture
 
 ### 1. Perception Layer
 - Synthetic camera using Replicator  
@@ -69,7 +69,7 @@ Each state is responsible for:
 
 ---
 
-## 🔍 Visual Servoing (Core Innovation)
+## Visual Servoing (Core Innovation)
 
 At close range, the agent transitions from navigation to **vision-driven alignment**:
 
@@ -85,7 +85,7 @@ This allows:
 
 ---
 
-## 🏗️ Environment
+## Environment
 
 The Digital Twin represents a warehouse / server environment with:
 - Conveyor systems  
@@ -96,7 +96,7 @@ The Digital Twin represents a warehouse / server environment with:
 
 ---
 
-## 📸 Highlights
+## Highlights
 
 These renders showcase the Digital Twin environment from multiple perspectives, highlighting system layout, asset organization, and operational context.
 
@@ -130,7 +130,7 @@ Central enclosure containing the red warning light target used for detection.
 
 ---
 
-## 🧪 Technical Stack
+## Technical Stack
 
 - NVIDIA Omniverse  
 - Isaac Sim 4.2 (containerized)  
@@ -140,7 +140,7 @@ Central enclosure containing the red warning light target used for detection.
 
 ---
 
-## ⚙️ Key Features
+## Key Features
 
 - Fixed world-space start pose  
 - Waypoint-based navigation  
@@ -152,7 +152,7 @@ Central enclosure containing the red warning light target used for detection.
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```text
 project_07_ai_driven_digital_twin_system/
@@ -168,7 +168,7 @@ project_07_ai_driven_digital_twin_system/
 
 ---
 
-## 🧭 What This Demonstrates
+## What This Demonstrates
 
 - Real-time perception in simulation  
 - Digital Twin interaction logic  
@@ -178,7 +178,7 @@ project_07_ai_driven_digital_twin_system/
 
 ---
 
-## 🔮 Next Steps
+## Next Steps
 
 - Multi-agent coordination  
 - Depth-based navigation  
@@ -188,7 +188,7 @@ project_07_ai_driven_digital_twin_system/
 
 ---
 
-## 🏁 Summary
+## Summary
 
 This is not just a simulation.
 
@@ -200,7 +200,7 @@ It is a functional AI agent operating inside a Digital Twin, capable of:
 
 ---
 
-## 👤 Author
+## Author
 
 **Dartayous Hunter**  
 Digital Twin Engineer (OpenUSD | Omniverse | AI Systems)
